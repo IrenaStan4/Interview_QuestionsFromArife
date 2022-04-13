@@ -21,7 +21,8 @@ public class PrintAllPermutationCombinations {
             System.out.println(Arrays.toString( s.toCharArray( ) ) );
     }
     public static Set<String> permutation(char[] ch) {
-        String str = Arrays.toString(ch).replace(", ", "").replace("[", "").replace("]", "");
+        String str = Arrays.toString(ch).replace(", ", "").
+                replace("[", "").replace("]", "");
         Set<String> set = new LinkedHashSet<>();
         if (str.length() == 1){
             set.add(str);
